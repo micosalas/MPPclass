@@ -20,6 +20,26 @@ public void setGpa(double Gpa){
 @Override
 public String studentInfo() {
 	// TODO Auto-generated method stub
-	return null;
+	return "we are undergrad students";
+}
+@Override
+public String getFirstName() {
+	// TODO Auto-generated method stub
+	return super.getFirstName();
+}
+@Override
+public String getLastName() {
+	// TODO Auto-generated method stub
+	return super.getLastName();
+}
+@Override
+public void setFirstName(String fName) {
+	// TODO Auto-generated method stub
+	super.setFirstName(fName);
+}
+@Override
+public void setLastName(String lName) {
+	// TODO Auto-generated method stub
+	this.setFirstName(lName);
 }
 }

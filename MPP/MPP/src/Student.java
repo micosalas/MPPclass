@@ -21,6 +21,6 @@ public String getLastName(){
 	return lastName;
 }
 public void setLastName(String lName){
-	
+	lastName=lName;
 }
 }

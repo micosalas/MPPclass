@@ -5,16 +5,25 @@ public class PartTimeStudent extends underGradStudent {
 	
 
 	public PartTimeStudent(String fname, String lname, double pg, int xCreditHour) {
-		super(fname, lname, pg);
-		// TODO Auto-generated constructor stub
+		super(fname, lname, pg);		
 		this.creditHour = xCreditHour;
 	}
 
 
 	@Override
 	public String studentInfo() {
-		// TODO Auto-generated method stub
-		return super.studentInfo();
+		
+		return "part time under grad students ";
+	}
+
+
+	public int getCreditHour() {
+		return creditHour;
+	}
+
+
+	public void setCreditHour(int creditHour) {
+		this.creditHour = creditHour;
 	}
 }
 
