@@ -1,0 +1,32 @@
+package tusday1st;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class County {
+private String Name;
+private String State;
+public String getName() {
+	return Name;
+}
+public void setName(String name) {
+	Name = name;
+}
+public String getState() {
+	return State;
+}
+public void setState(String state) {
+	State = state;
+}
+
+/*public void print(){
+	Person per=new Person();
+	System.out.println(per.getFirstName()+"  "+ per.getLastName());
+	List<Vehicle>x=per.getVicls();
+	Iterator it=x.iterator();
+	while(it.hasNext()){
+		Vehicle y=(Vehicle)it.next();
+		System.out.println(y.getVinNumber()+"  "+y.getModel());
+	}*/
+}
+

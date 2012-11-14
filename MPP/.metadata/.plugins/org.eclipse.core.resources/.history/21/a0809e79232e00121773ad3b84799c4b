@@ -1,0 +1,47 @@
+package tusday1st;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Main {
+public static void main(String[]args){	
+	Vehicle vi=new Vehicle();
+
+	
+	Person []per=new Person[2];
+	
+	List<Vehicle>vic=new LinkedList<Vehicle>();
+	
+	vic.add(new Vehicle("dvf98", "PMG", 1987, 4523.5));
+	vic.add(new Vehicle("GFTR7", "Crola", 1890, 1200.89));
+	
+	per[0]=new Person("salas", "alyemin", "1986 N 193th", "renton", 8877, 206, "micosala@gmail.com", vic);
+	List<Vehicle>vic1=new LinkedList<Vehicle>();
+	vic1.add(new Vehicle("Nissan", "Maxima", 1766, 67.1));
+	vic1.add(new Vehicle("Ford", "Shavi", 1288, 1100));
+	per[1]=new Person("ekram", "humudi", "1986 N 193th", "renton", 8877, 206, "chagnian@gmail.com", vic1 );
+	
+	
+	for(int i=0;i<per.length;i++){
+		System.out.println(per[i].getFirstName() + " " + per[i].getLastName()+"  "+per[i].getAddress()+"  "+per[i].getCity()
+				+"  "+per[i].getZipcode()+"  "+per[i].getEmail());		
+		List<Vehicle> x = per[i].getVicls();
+		Iterator it = x.iterator();
+		while(it.hasNext()){
+			Vehicle y = (Vehicle) it.next();
+			System.out.println(" ------------------"+ y.getVinNumber() + " "+ y.getModel()+"  "+y.getYear()+"  "+y.getEstimatValue()+"it tax value"+vi.computeTax());
+	
+		}
+			
+		
+			
+		
+	}
+	
+	
+	/*for(Person pr:per)
+		System.out.println(pr.getFirstName()+"  "+ pr.getLastName());*/
+	
+}
+}

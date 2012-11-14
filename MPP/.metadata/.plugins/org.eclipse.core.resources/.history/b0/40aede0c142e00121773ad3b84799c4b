@@ -1,0 +1,21 @@
+package tusday1st;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Main {
+public static void main(String[]args){
+	Vehicle vi=new Vehicle("ghdt89", "KMP");
+	Person []per=new Person[2];
+	/*List<Vehicle>vic=new LinkedList();
+	
+	vic.add(new Vehicle("dvf98", "PMG"));
+	vic.add(new Vehicle("GFTR7", "Crola"));*/
+	
+	per[0]=new Person("salas", "alyemin", vi );
+	per[1]=new Person("ekram", "humudi", new Vehicle("PMJ09", "ghy") );
+	
+	for(Person pr:per)
+		System.out.println(pr.getFirstName()+"  "+ pr.getLastName()+"  "+vi.getVinNumber()+" "+vi.getModel());
+}
+}

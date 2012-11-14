@@ -1,0 +1,44 @@
+package tusday1st;
+
+import java.util.List;
+
+public class Person {
+private String firstName;
+private String lastName;
+/*private String Address;
+private String City;
+private int zipcode;
+private int phoneNumber;
+private String Email;*/
+private List<Vehicle>vicls;
+
+public Person(String fName, String lName, List<Vehicle>vic){
+	this.firstName=fName;
+	this.lastName=lName;
+	this.vicls=vic;
+}
+
+public String getFirstName() {
+	return firstName;
+}
+
+public void setFirstName(String firstName) {
+	this.firstName = firstName;
+}
+
+public String getLastName() {
+	return lastName;
+}
+
+public void setLastName(String lastName) {
+	this.lastName = lastName;
+}
+
+public List<Vehicle> getVicls() {
+	return vicls;
+}
+
+public void setVicls(List<Vehicle> vicls) {
+	this.vicls = vicls;
+}
+}

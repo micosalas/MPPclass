@@ -1,0 +1,23 @@
+package tusday1st;
+
+public class County {
+private String Name;
+private String State;
+public String getName() {
+	return Name;
+}
+public void setName(String name) {
+	Name = name;
+}
+public String getState() {
+	return State;
+}
+public void setState(String state) {
+	State = state;
+}
+
+public String print(){
+	Person per=new Person();
+	return per.getFirstName()+"  "+ per.getLastName();
+}
+}
